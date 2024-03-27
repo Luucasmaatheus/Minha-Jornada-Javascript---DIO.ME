@@ -7,15 +7,17 @@
 // - (3)Em duas vezes, preço normal de etiqueta sem juros;
 // - (4)Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 // */
-
+function aplicarDesconto(valor, desconto){
+    return (valor - (Valor * (desconto / 100)))
+}
 
 
 const precoEtiqueta = 100;
-const formaPagamento = 2;
+const formaPagamento = 1;
 
 
 if(formaPagamento === 1){
-    console.log(precoEtiqueta - (precoEtiqueta * 0.1))
+    console.log(aplicarDesconto(precoEtiqueta, 10))
 }else if(formaPagamento === 2){
     console.log(precoEtiqueta - (precoEtiqueta * 0.15))
 }else if(formaPagamento === 3){

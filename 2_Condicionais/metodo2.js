@@ -1,8 +1,8 @@
-const precoEtanol = 5.79;
+const precoEtanol = 5.59;
 const precoGasolina = 6.66;
 const kmPorLitro = 10;
-const distanciaEmKm = 100;
-const tipoCombustivel = `Gasolina`
+const distanciaEmKm = 1000;
+const tipoCombustivel = `Etanol`
 
 const litrosConsumidos = distanciaEmKm / kmPorLitro;
 const valorGastoGasolina = litrosConsumidos * precoGasolina;
